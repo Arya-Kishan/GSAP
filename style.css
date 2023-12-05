@@ -105,6 +105,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 }
 
 .cards {
@@ -157,6 +158,7 @@ body {
     border: 2px solid white;
     width: 150px;
     position: absolute;
+    box-shadow: 0 0 5px 2px white;
 }
 
 @media screen and (max-width:1100px) {
@@ -181,8 +183,8 @@ body {
 }
 
 #page1 img:nth-child(4) {
-    top: 80%;
-    left: 40%;
+    top: 65%;
+    left: 30%;
 }
 
 #page1 img:nth-child(5) {
@@ -202,7 +204,7 @@ body {
 }
 
 #page1 img:nth-child(8) {
-    top: 60%;
+    top: 70%;
     right: 10%;
 }
 
@@ -341,6 +343,7 @@ body {
     z-index: 4;
     color: white;
     scale: .3;
+    opacity: 0;
 }
 
 #page4-text h1 {
@@ -366,7 +369,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: black;
-    border: 4px solid white;
+    /* border: 4px solid white; */
     color: white;
     padding: 10%;
 }
@@ -459,7 +462,8 @@ body {
 }
 
 #page6-div1-inner1 {
-    background-color: rgb(1, 150, 150);
+    background-color: black;
+    color: white;
     justify-content: flex-end;
     align-items: center;
     transform: translateX(-0%);
@@ -467,7 +471,8 @@ body {
 }
 
 #page6-div1-inner2 {
-    background-color: rgb(1, 150, 150);
+    background-color: black;
+    color: white;
     justify-content: flex-start;
     align-items: center;
     transform: translateX(0%);

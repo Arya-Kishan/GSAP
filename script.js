@@ -15,18 +15,18 @@ function stack() {
     })
 
     t1.to("#card2", {
-        top: "10%",
+        top: "1%",
     }, "a")
 
     t1.to("#card3", {
-        top: "20%",
+        top: "4%",
     }, "b")
     t1.to("#card2", {
         scale: .9,
     }, "b")
 
     t1.to("#card4", {
-        top: "33%",
+        top: "8%",
     }, "c")
     t1.to("#card3", {
         scale: .9,
@@ -52,49 +52,49 @@ function vibrateImg() {
 }
 vibrateImg()
 
-function intro() {
-    let t3 = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#page2",
-            start: "20% 20%",
-            end: "100% 20%",
-            scrub: 1,
-            // markers: true,
-            pin: true,
-        }
-    })
+// function intro() {
+//     let t3 = gsap.timeline({
+//         scrollTrigger: {
+//             trigger: "#page2",
+//             start: "20% 20%",
+//             end: "100% 20%",
+//             scrub: 1,
+//             // markers: true,
+//             pin: true,
+//         }
+//     })
 
-    t3.to("#page2 h1", {
-        x: "150%"
-    }, "a")
-    t3.to("#page2 h2", {
-        x: "-150%"
-    }, "a")
-    t3.to("#page2 img", {
-        // y:"-50%",
-        width: "98%",
-    }, "a")
+//     t3.to("#page2 h1", {
+//         x: "150%"
+//     }, "a")
+//     t3.to("#page2 h2", {
+//         x: "-150%"
+//     }, "a")
+//     t3.to("#page2 img", {
+//         // y:"-50%",
+//         width: "98%",
+//     }, "a")
 
-    t3.to("#cute p:nth-child(1)", {
-        x: "-85%",
-    }, "b")
+//     t3.to("#cute p:nth-child(1)", {
+//         x: "-85%",
+//     }, "b")
 
-    t3.to("#cute p:nth-child(2)", {
-        x: "117%",
-    }, "c")
+//     t3.to("#cute p:nth-child(2)", {
+//         x: "117%",
+//     }, "c")
 
-    t3.to("#cute p:nth-child(3)", {
-        y: "-70%",
-    }, "d")
+//     t3.to("#cute p:nth-child(3)", {
+//         y: "-70%",
+//     }, "d")
 
-}
-intro()
+// }
+// intro()
 
 function scrollPage3() {
     let t4 = gsap.timeline({
         scrollTrigger: {
             trigger: "#page3",
-            start: "0% 1%",
+            start: "1% 1%",
             end: "100% 1%",
             scrub: 1,
             // markers: true,
@@ -157,7 +157,7 @@ function Page4() {
             start: "0% 1%",
             end: "100% 1%",
             scrub: 2,
-            // markers: true,
+            markers: true,
             pin: true,
         }
     })
@@ -166,15 +166,17 @@ function Page4() {
         scale:50,
     },'a')
     t5.to("#page4-circle",{
-        scale:65,
+        scale:120,
     },'b')
     t5.to("#page4-text",{
         y:"-50%",
-        scale:.1
+        scale:.1,
+        opacity:.5,
     },'b')
     t5.to("#page4-text",{
         y:"-65%",
-        scale:1
+        scale:1,
+        opacity:1,
     },'c')
 }
 Page4()
@@ -214,7 +216,7 @@ function Page6(){
             start: "10% 10%",
             end: "100% 10%",
             scrub: 2,
-            markers: true,
+            // markers: true,
             pin: true,
         }
     })
