@@ -7,7 +7,7 @@ function stack() {
         scrollTrigger: {
             trigger: "#main",
             start: "20% 32%",
-            end: "80% 32%",
+            end: "400% 32%",
             scrub: 1,
             // markers:true,
             pin: true,
@@ -95,7 +95,7 @@ function scrollPage3() {
         scrollTrigger: {
             trigger: "#page3",
             start: "1% 1%",
-            end: "100% 1%",
+            end: "400% 1%",
             scrub: 1,
             // markers: true,
             pin: true,
@@ -133,6 +133,9 @@ function scrollPage3() {
         left: "0%"
     }, 'b')
 
+    t4.to("#page3-img1", {
+        opacity: 0
+    }, 'c')
     t4.to("#page3-IMG", {
         scale: 2.7,
         opacity: 1
@@ -155,9 +158,9 @@ function Page4() {
         scrollTrigger: {
             trigger: "#page4",
             start: "0% 1%",
-            end: "100% 1%",
+            end: "400% 1%",
             scrub: 2,
-            markers: true,
+            // markers: true,
             pin: true,
         }
     })
@@ -187,7 +190,7 @@ function Page5(){
         scrollTrigger: {
             trigger: "#page5",
             start: "10% 10%",
-            end: "100% 10%",
+            end: "400% 10%",
             scrub: 3,
             // markers: true,
             pin: true,
@@ -214,7 +217,7 @@ function Page6(){
         scrollTrigger: {
             trigger: "#page6",
             start: "10% 10%",
-            end: "100% 10%",
+            end: "400% 10%",
             scrub: 2,
             // markers: true,
             pin: true,

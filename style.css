@@ -35,6 +35,12 @@ body {
     padding: 2px 10px;
 }
 
+@media screen and (max-width: 700px) {
+    #nav-part-2 {
+        display: none;
+    }
+}
+
 #circle {
     border: 1px solid white;
     width: 10px;
@@ -97,7 +103,6 @@ body {
 /* ---------------------------------------- */
 
 #main {
-    border: 8px solid #ff0000;
     min-height: 120vh;
     position: relative;
     display: flex;
@@ -129,19 +134,31 @@ body {
 #card2 {
     background-color: blue;
     position: absolute;
-    top: 85%;
+    top: 100%;
+    background-image: url(./a1.avif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #card3 {
     background-color: yellow;
     position: absolute;
     top: 170%;
+    background-image: url(./a2.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #card4 {
     background-color: green;
     position: absolute;
     top: 255%;
+    background-image: url(./a3.avif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* --------------------- */
@@ -260,7 +277,7 @@ body {
 #page3-img1 {
     position: absolute;
     bottom: 0%;
-    left: -55%;
+    left: -100%;
 }
 
 #page3-img2 {
@@ -288,20 +305,24 @@ body {
     animation: MovingImg 3s linear infinite alternate;
 }
 
-@keyframes MovingImg{
-    0%{
+@keyframes MovingImg {
+    0% {
         transform: translateX(6px);
     }
-    25%{
+
+    25% {
         transform: translateY(6px);
     }
-    50%{
+
+    50% {
         transform: translateX(-6px);
     }
-    75%{
+
+    75% {
         transform: translateY(-10px);
     }
-    100%{
+
+    100% {
         transform: translateX(10px);
     }
 }
@@ -381,7 +402,7 @@ body {
     perspective: 800px;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    background-color: red;
+    background-color: black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -434,6 +455,18 @@ body {
     transform: rotateX(180deg);
 }
 
+#sword {
+    width: 200px;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-125deg);
+}
+
+#sword img {
+    width: 100%;
+}
 
 /* --------------------------PAGE 6-------------------- */
 #page6 {
@@ -522,4 +555,7 @@ body {
 #page6-div3 {
     place-items: center;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
